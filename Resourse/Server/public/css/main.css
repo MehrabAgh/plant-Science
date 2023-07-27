@@ -1,0 +1,37 @@
+ @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
+ html {
+     background-color: #EEFCFF;
+ }
+ 
+ html,
+ body {
+     text-align: center;
+     position: relative;
+     display: flex;
+     margin: auto;
+ }
+ 
+ .BodyCover {
+     margin-top: 10%;
+     width: 723px;
+     height: 723px;
+     border-radius: 14px;
+     background: #E6F4F1;
+ }
+ 
+ .headText {
+     color: #003951;
+     font-size: 18px;
+     font-family: Baloo;
+     font-weight: 400;
+     word-wrap: break-word
+ }
+ 
+ .headTextBody {
+     color: #A53267;
+     font-size: 16px;
+     font-family: Baloo;
+     font-weight: 400;
+     word-wrap: break-word
+ }

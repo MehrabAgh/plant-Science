@@ -1,0 +1,4 @@
+https://manzik.com/ipastic/index.php
+https://www.codeconvert.ai/r-to-python-converter
+https://github.com/pour-aboughadareh/iPASTIC
+http://www.xavierdupre.fr/app/pyensae/helpsphinx/notebooks/r2python.html
