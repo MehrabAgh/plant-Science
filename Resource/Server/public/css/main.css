@@ -1,37 +1,266 @@
- @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
- @import url('https://fonts.googleapis.com/css?family=Roboto');
- html {
-     background-color: #EEFCFF;
- }
- 
- html,
- body {
-     text-align: center;
-     position: relative;
-     display: flex;
-     margin: auto;
- }
- 
- .BodyCover {
-     margin-top: 10%;
-     width: 723px;
-     height: 723px;
-     border-radius: 14px;
-     background: #E6F4F1;
- }
- 
- .headText {
-     color: #003951;
-     font-size: 18px;
-     font-family: Baloo;
-     font-weight: 400;
-     word-wrap: break-word
- }
- 
- .headTextBody {
-     color: #A53267;
-     font-size: 16px;
-     font-family: Baloo;
-     font-weight: 400;
-     word-wrap: break-word
- }
+.frame-child,
+.frame-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-azure-100);
+    width: 888px;
+    height: 1140px;
+}
+
+.frame-item {
+    top: 48px;
+    left: 54px;
+    border-radius: var(--br-sm);
+    background-color: var(--color-azure-200);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 777px;
+    height: 1047px;
+}
+
+.span {
+    color: var(--color-palevioletred);
+}
+
+.online-toolkit-to-calculate-pl {
+    font-size: var(--font-size-base);
+    color: var(--color-saddlebrown);
+}
+
+.plant-science-online-container {
+    position: absolute;
+    top: 82px;
+    left: 182px;
+    display: inline-block;
+    width: 520px;
+    height: 42px;
+    font-size: var(--font-size-lg);
+}
+
+.frame-inner {
+    position: absolute;
+    top: 714px;
+    left: 75px;
+    border-radius: var(--br-5xs) var(--br-5xs) 0 0;
+    background-color: var(--color-lightgoldenrodyellow);
+    width: 734px;
+    height: 56px;
+}
+
+.d-plot {
+    position: absolute;
+    top: 723px;
+    left: 136px;
+    display: inline-block;
+    width: 82px;
+    height: 25px;
+}
+
+.frame-child1,
+.frame-child2,
+.line-div {
+    position: absolute;
+    top: 727px;
+    left: 258px;
+    border-right: 2px dashed var(--color-darkslategray-200);
+    box-sizing: border-box;
+    width: 2px;
+    height: 29px;
+}
+
+.frame-child1,
+.frame-child2 {
+    left: 400px;
+}
+
+.frame-child2 {
+    left: 628px;
+}
+
+.correlation-plots,
+.frequencies,
+.pca {
+    position: absolute;
+    top: 723px;
+    left: 310px;
+    display: inline-block;
+    width: 54px;
+}
+
+.correlation-plots,
+.frequencies {
+    top: 729px;
+    left: 440px;
+    font-size: var(--font-size-xl);
+    width: 160px;
+    height: 25px;
+}
+
+.frequencies {
+    left: 654px;
+    width: 117px;
+}
+
+.frame-child3,
+.frame-child4,
+.frame-child5,
+.rectangle-div {
+    position: absolute;
+    top: 723px;
+    left: 120px;
+    border-radius: var(--br-xs);
+    border-bottom: 3px solid var(--color-darkslategray-200);
+    box-sizing: border-box;
+    width: 107px;
+    height: 38px;
+}
+
+.frame-child3,
+.frame-child4,
+.frame-child5 {
+    left: 294px;
+    width: 79px;
+}
+
+.frame-child4,
+.frame-child5 {
+    top: 730px;
+    left: 433px;
+    width: 176px;
+    height: 32px;
+}
+
+.frame-child5 {
+    left: 643px;
+    width: 136px;
+}
+
+.the-results-of {
+    position: absolute;
+    top: 132px;
+    left: 182px;
+    font-size: var(--font-size-xl);
+    color: var(--color-palevioletred);
+    text-align: center;
+    display: inline-block;
+    width: 520px;
+    height: 42px;
+}
+
+.frame-child6 {
+    position: absolute;
+    top: 768px;
+    left: 75px;
+    border-radius: var(--br-2xs);
+    background-color: var(--color-floralwhite);
+    border-top: 2px solid var(--color-darkgray);
+    box-sizing: border-box;
+    width: 734px;
+    height: 323px;
+}
+
+.column-0 {
+    position: absolute;
+    top: 571px;
+    left: 444px;
+    font-size: 12px;
+    font-family: var(--font-inter);
+    color: var(--color-black);
+}
+
+.frame-child7 {
+    position: absolute;
+    top: 200px;
+    left: 233px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-lightgoldenrodyellow);
+    width: 422px;
+    height: 56px;
+}
+
+.frame-child8,
+.indices {
+    position: absolute;
+    top: 209px;
+    left: 308px;
+}
+
+.frame-child8 {
+    top: 214px;
+    left: 464px;
+    border-right: 2px dashed var(--color-darkslategray-200);
+    box-sizing: border-box;
+    width: 2px;
+    height: 29px;
+}
+
+.ranks {
+    position: absolute;
+    top: 209px;
+    left: 519px;
+}
+
+.frame-child9 {
+    top: 209px;
+    left: 287px;
+    border-radius: var(--br-xs);
+    border-bottom: 3px solid var(--color-darkslategray-200);
+    width: 121px;
+    height: 38px;
+}
+
+.frame-child10,
+.frame-child11,
+.frame-child9 {
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.frame-child10 {
+    top: 207px;
+    left: 502px;
+    border-radius: var(--br-xs);
+    border-bottom: 3px solid var(--color-darkslategray-200);
+    width: 109px;
+    height: 38px;
+}
+
+.frame-child11 {
+    top: 253px;
+    left: 75px;
+    border-radius: var(--br-2xs);
+    background-color: var(--color-floralwhite);
+    border-top: 2px solid var(--color-darkgray);
+    width: 734px;
+    height: 432px;
+}
+
+.diagrams,
+.tables {
+    top: 445px;
+    left: 401px;
+}
+
+.diagrams {
+    top: 912px;
+    left: 403px;
+}
+
+.rectangle-parent {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* overflow: hidden; */
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-darkslategray-200);
+    font-family: var(--font-baloo);
+}
+
+#includedContent {
+    width: 30%;
+    top: 70%;
+    left: 5%;
+}

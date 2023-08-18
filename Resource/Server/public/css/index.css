@@ -1,0 +1,194 @@
+.frame-child,
+.frame-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-azure-100);
+    width: 888px;
+    height: 1140px;
+}
+
+.frame-item {
+    top: 82px;
+    left: 86px;
+    border-radius: var(--br-sm);
+    background-color: var(--color-azure-200);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 723px;
+    height: 991px;
+}
+
+.frame-inner {
+    position: absolute;
+    top: 553px;
+    left: 224px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-lightgoldenrodyellow);
+    width: 422px;
+    height: 56px;
+}
+
+.span {
+    color: var(--color-palevioletred);
+}
+
+.online-toolkit-to-calculate-pl {
+    font-size: var(--font-size-base);
+    color: var(--color-saddlebrown);
+}
+
+.plant-science-online-container {
+    position: absolute;
+    top: 159px;
+    left: 184px;
+    display: inline-block;
+    width: 520px;
+    height: 42px;
+    font-size: var(--font-size-lg);
+}
+
+.instructions {
+    position: absolute;
+    top: 562px;
+    left: 273px;
+}
+
+.line-div,
+.rectangle-div {
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.rectangle-div {
+    top: 610px;
+    left: 164px;
+    border-radius: var(--br-2xs);
+    background-color: var(--color-floralwhite);
+    border-top: 5px solid var(--color-darkgray);
+    width: 541px;
+    height: 324px;
+}
+
+.line-div {
+    top: 567px;
+    left: 455px;
+    border-right: 2px dashed var(--color-darkslategray-200);
+    width: 2px;
+    height: 29px;
+}
+
+.indices {
+    position: absolute;
+    top: 562px;
+    left: 510px;
+}
+
+.frame-child1,
+.frame-child2 {
+    position: absolute;
+    top: 560px;
+    left: 257px;
+    border-radius: var(--br-xs);
+    border-bottom: 3px solid var(--color-darkslategray-200);
+    box-sizing: border-box;
+    width: 163px;
+    height: 38px;
+}
+
+.frame-child2 {
+    left: 493px;
+    width: 109px;
+}
+
+.span1 {
+    color: var(--color-darkslategray-100);
+}
+
+.to-start-calculating-please-p {
+    margin: 0;
+}
+
+.to-start-calculating-container {
+    position: absolute;
+    top: 669px;
+    left: 217px;
+    font-size: var(--font-size-base);
+    white-space: pre-wrap;
+    display: inline-block;
+    width: 452px;
+    color: var(--color-teal);
+}
+
+.about-us,
+.example-file {
+    position: absolute;
+    top: 991px;
+    left: 636px;
+    color: var(--color-black);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-us {
+    left: 493px;
+}
+
+.frame-child3,
+.frame-child4 {
+    position: absolute;
+    border-radius: var(--br-15xl);
+}
+
+.frame-child3 {
+    top: 244px;
+    left: 229px;
+    background-color: #bfd0cd;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 413px;
+    height: 203px;
+}
+
+.frame-child4 {
+    top: 260px;
+    left: 246px;
+    background-color: var(--color-azure-100);
+    border: 7px dashed var(--color-black);
+    box-sizing: border-box;
+    width: 378px;
+    height: 170px;
+}
+
+.choose-file,
+.frame-child5 {
+    position: absolute;
+    top: 326px;
+    left: 373px;
+}
+
+.frame-child5 {
+    top: 447px;
+    left: 360px;
+    border-radius: 41px;
+    background-color: var(--color-darkslategray-200);
+    box-shadow: 0 5px 3px 2px rgba(0, 0, 0, 0.25);
+    width: 151px;
+    height: 68px;
+}
+
+.process {
+    position: absolute;
+    top: 462px;
+    left: 393px;
+    color: var(--color-white);
+}
+
+.rectangle-parent {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 1140px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-darkslategray-200);
+    font-family: var(--font-baloo);
+}

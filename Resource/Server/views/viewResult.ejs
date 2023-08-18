@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $("#includedContent").load("data_results/fig.html");
+        });
+    </script>
+
+</head>
+
+<body onload=myFunction()>
+    <img id="ch" src={http://localhost:3000/data_results/correlations_heatmaps.png />
+    <img id="rf" src="../public/data_results/correlations_heatmaps.png" />
+    <img id="bp" src="../public/data_results/relative_frequency.png" />
+    <div id="includedContent"></div>
+
+    <form action="/result" method="get">
+        <select onchange="myFunction()" name="myselect" id="myselect">
+        <option value="TOLL">--Please choose an option--</option>
+        <option value="TOLL">TOLL</option>
+        <option value="MP">MP</option>
+        <option value="GMP">GMP</option>
+        <option value="HM">HM</option>
+        <option value="SSI">SSI</option>
+        <option value="STI">STI</option>
+        <option value="YI">YI</option>
+        <option value="YSI">YSI</option>
+        <option value="RSI">RSI</option>
+      </select>
+        <select onchange="this.form.submit()" name="mycategory_v1" id="mycategory_v1">      
+        <option value="Rank">Rank</option>
+        <option value="Indices">Indices</option>   
+      </select>
+        <select onchange="myFunction()" name="mycategory_v2" id="mycategory_v2">     
+        <option value="3D">3D Plot</option>
+        <option value="PCA">PCA</option>  
+        <option value="Corre">Correlation</option>
+        <option value="Freq">Frequencies</option>   
+      </select>
+    </form>
+    <div class="rectangle-parent">
+        <div class="frame-child"></div>
+        <div class="frame-item"></div>
+        <div class="plant-science-online-container">
+            <span>Plant-Science</span>
+            <span class="online-toolkit-to-calculate-pl">
+          <span class="span"> </span>
+            <span>: online toolkit to calculate plant abiotic stress indices.</span
+          >
+        </span>
+        </div>
+        <div class="frame-inner"></div>
+        <div class="d-plot">3D Plot</div>
+        <div class="line-div"></div>
+        <div class="frame-child1"></div>
+        <div class="frame-child2"></div>
+        <div class="pca">PCA</div>
+        <div class="correlation-plots">Correlation Plots</div>
+        <div class="frequencies">Frequencies</div>
+        <div class="rectangle-div"></div>
+        <div class="frame-child3"></div>
+        <div class="frame-child4"></div>
+        <div class="frame-child5"></div>
+        <div class="the-results-of">The results of the calculated data</div>
+        <div class="frame-child6"></div>
+        <div class="column-0"></div>
+        <div class="frame-child7"></div>
+        <div class="indices">Indices</div>
+        <div class="frame-child8"></div>
+        <div class="ranks">Ranks</div>
+        <div class="frame-child9"></div>
+        <div class="frame-child10"></div>
+        <div class="frame-child11"></div>
+        <div class="tables">
+            Tables...
+        </div>
+        <div class="diagrams">
+            Diagrams...
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function myFunction() {
+        var a = document.getElementById("mycategory_v2").value;
+        var a_item = document.getElementById("ch");
+        var b_item = document.getElementById("rf");
+        var c_item = document.getElementById("bp");
+        var d_item = document.getElementById("includedContent");
+
+        switch (a) {
+            case "3D":
+                d_item.style.display = "block";
+                b_item.style.display = "none";
+                c_item.style.display = "none";
+                a_item.style.display = "none";
+                break;
+            case "PCA":
+                c_item.style.display = "block";
+                b_item.style.display = "none";
+                a_item.style.display = "none";
+                d_item.style.display = "none";
+                break;
+            case "Corre":
+                a_item.style.display = "block";
+                b_item.style.display = "none";
+                c_item.style.display = "none";
+                d_item.style.display = "none";
+                break;
+            case "Freq":
+                b_item.style.display = "block";
+                a_item.style.display = "none";
+                c_item.style.display = "none";
+                d_item.style.display = "none";
+                break;
+            default:
+                break;
+        }
+        this.form.submit()
+    }
+</script>
